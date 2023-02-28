@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            height: 100px;
+            width: 100%;
+            background: lightcoral;
+            display: flex;
+            position: fixed;
+            top: 0;
+        }
+        
+        .header .logo {
+            height: 100px;
+            background: blue;
+            width: 20%;
+            /* float: left; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .header .cname {
+            height: 100px;
+            width: 80%;
+            background: purple;
+            /* float: left; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .nav {
+            margin-top: 100px;
+            height: 50px;
+            background: rgb(235, 71, 71);
+            text-align: center;
+            line-height: 50px;
+            /* word-spacing: 20px; */
+        }
+        /* .nav ul {
+            margin: 0;
+            padding: 0;
+        } */
+        
+        .nav ul li {
+            list-style: none;
+            display: inline;
+            /* border: 3px solid; */
+            margin-right: 20px;
+            padding: 5px 15px;
+        }
+        
+        .nav ul li a {
+            text-decoration: none;
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background: yellowgreen;
+            padding: 5px 15px;
+        }
+        
+        .content {
+            height: 400px;
+            background: gray;
+            display: flex;
+        }
+        
+        .content .x1 {
+            height: 400px;
+            width: 25%;
+            border: 2px solid red;
+        }
+        
+        .content .x1 .h {
+            height: 200px;
+            /* width: 25%; */
+            border: 2px solid;
+        }
+        
+        .footer {
+            height: 1100px;
+            background: rgb(11, 155, 199);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- header start -->
+    <div class="header">
+        <div class="logo">logo</div>
+        <div class="cname">Company Name</div>
+    </div>
+    <!-- header end -->
+
+    <div class="nav">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Content</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="x1">part 1</div>
+
+        <div class="x1">
+            <div class="h">up</div>
+            <div class="h">down</div>
+        </div>
+
+        <div class="x1">part 3</div>
+        <div class="x1">part 4</div>
+    </div>
+
+    <div class="footer">footer</div>
+
+</body>
+
+</html>
